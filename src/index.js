@@ -7,7 +7,7 @@ setTimeout(() => {
     data.slice(0, 50).forEach(item => {
       const img  = document.createElement('img');
         img.src= item.url
-      document.body.append(img);
+      const push = document.body.append(img);
     });
   })
   .catch(error);   
@@ -16,3 +16,6 @@ setTimeout(() => {
 
 photo()
    
+
+
+ 
